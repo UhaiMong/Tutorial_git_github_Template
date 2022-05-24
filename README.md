@@ -62,6 +62,20 @@ Linux or Mac user
 ```
 touch fileName.txt
 ```
+__Git এর কিছু ফাইল বা জিনিস ignore করতে চাইলে অর্থাৎ যে ফাইল গুলো github এ push করতে না চাইলে file extentsion টা .gitingore file এর ভিতরে লিখে দিবেন।__
+```
+call> .gitignore
+or touch .gitignore
+```
+__.gitignore file ভিতরে যেভাবে লিখবেন--__
+```
+example.txt     <it will ignore example.txt>
+.env            <it wiill ignore .env file>
+*.txt           <it will ignore all txt file>
+!main.txt       <it will not ignore !main.txt>
+some?.txt       <it will ignore some.txt>
+temp/           <it will ignore all temp/ folder>
+```
 __to open file with command windows users__
 ```
 fileName.txt
@@ -73,6 +87,7 @@ open fileName.txt
 ___(any file with extension,there I am showing only txt file)___  
 __(Repository) তে ফাইল বা ফোল্ডার সংযুক্ত করার জন্য---__
 ```
+git status      <check status>
 git add fileName.txt
 ```
 ___or___
@@ -98,8 +113,12 @@ __কোনো কোড কিংবা কোনো নতুন লাইন 
 ## Local repository and Remote Repository or GitHub এ সাথে সংযুক্ত করা---
 ___
 
+<br><br>
+
 ### প্রথমের আপনার গিটহাব একাউন্ট এ গিয়ে একটি নিউ রিপোজিটোরি তৈরি করতে হবে। এটা করার জন্য নিচে ছবিটা অনুসরন করুন--
 <img src="images/newrepository.png" alt="newRepository">
+
+<br><br>
 
 __Remmote repository সাথে সংযুক্ত করার জন্য ---__  
 <br>
@@ -114,6 +133,8 @@ __নিচে ছবি মতো আপনার রিমোট রিপো�
 git remote add origin git remote add origin git remote add origin https://github.com/UhaiMong/DemoRepository.git
 ```
 <img src="images/url.png">
+
+<br><br>
 
 __এরপর ২নং চিহ্নিত কমান্ড টা কপি করে পেস্ট করুন। main এর স্থলে master লিখুন master থাকলে চেঞ্জ করতে হবে না।__
 ```
@@ -158,7 +179,10 @@ git pull                <upgrading file frome remote to local>
 git log --oneline       <check your commit>
 git fileName.txt        <check where you changed code in remote repository>
 ```
+<br><br>
+
 __রিপোজিটরি(repository) তে নতুন branch তৈরির প্রয়োজন হয়। সাধারনভাবে main or master branch তে কাজ করি। প্রয়োজন অনুসারে আরও branch তৈরি কিভাবে করব?।__
+<br><br>
 # Command line
 ```
 git branch                  <check how many branch created>
@@ -175,7 +199,10 @@ __আপনার গিটহাব একাউন্ট এ একটা pull
 <br><br>
 <img src="images/pullrequest.png">
 
+<br><br>
+
 ## লোকালের branching এবং merging করে সেগুলোকে  remote repository তে push করে দিব।
+<br><br>
 # Command line
 ```
 git checkout -b "branch2"           <any name>
@@ -202,6 +229,7 @@ dir                 <check directory that you have cloned>
 cd ..               <go to backward>
 cd FolderName       <change directory>
 code .              <open the code on Vscode>
+
 ```
 
 # Thank you everyon🙏🏻🙏🏻
@@ -214,7 +242,7 @@ code .              <open the code on Vscode>
 
 <!--All link here-->
 [facebook]:https://www.facebook.com/uhaisingmarma.uhai
-[linkedin]:https://www.linkedin.com/in/uhai-marma-1a64b51ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bgom4KzxVRkK2GB1Toeo4og%3D%3D
+[linkedin]:https://www.linkedin.com/in/uhai-marma-1a64b51ba
 [website]:https://uhaimong.github.io/PersonalWebsite/
 
 
